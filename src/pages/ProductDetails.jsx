@@ -10,7 +10,7 @@ const ProductDetails = () => {
 
     useEffect(() => {
         if (id) {
-            axios.get(`http://192.168.0.179:5000/products/${id}`)
+            axios.get(`https://darksole-server.onrender.com/products/${id}`)
                 .then((res) => setProductParams(res.data))
                 .catch((err) => console.error("Error fetching product:", err));
         }

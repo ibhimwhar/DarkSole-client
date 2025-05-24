@@ -4,7 +4,7 @@ import axios from "axios";
 // Create context
 export const ValueContext = createContext();
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://darksole-server.onrender.com";
 
 // Context Provider
 const ValueProvider = ({ children }) => {
