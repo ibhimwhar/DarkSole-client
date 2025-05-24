@@ -47,7 +47,7 @@ const ProductDetails = () => {
                 <p className="text-gray-300 mb-2">{productParams.description}</p>
                 <p className="text-white font-bold mb-4">Price: ${productParams.price?.toFixed(2)}</p>
                 <button
-                    onClick={() => AddToCart(productParams)} disabled={inCart}
+                    onClick={() => AddToCart(productParams)} disabled={insideCart}
                     className={`${insideCart
                         ? "bg-gray-900 opacity-90 cursor-not-allowed"
                         : "bg-indigo-600 cursor-pointer hover:bg-indigo-700"
